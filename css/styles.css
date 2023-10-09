@@ -5,17 +5,19 @@
 }
 
 :root {
-  --IRIS: #4d5ae5;
-  --OCEAN: #404bbf;
-  --NAVY-BLUE: #2e2f42;
-  --SLATE: #434455;
-  --LIGHT-SLATE: #8e8f99;
-  --CORNFLOWER: #e7e9fc;
-  --CLOUD: #f4f4fd;
-  --NAVY-BLUE-modal: rgba(46, 47, 66, 0.4);
-  --GREY: rgba(46, 47, 66, 0.7);
-  --WHITE: #fff;
-  --DAIRY: #fcfcfc;
+  --IRIS: #4D5AE5;
+    --OCEAN: #404BBF;
+    --NAVY-BLUE: #2E2F42;
+    --SLATE: #434455;
+    --LIGHT-SLATE: #8E8F99;
+    --CORNFLOWER: #E7E9FC;
+    --CLOUD: #F4F4FD;
+    --NAVY-BLUE-modal: rgba(46, 47, 66, 0.40);
+    --GREY: rgba(46, 47, 66, 0.70);
+    --WHITE: #fff;
+    --DAIRY: #FCFCFC;
+    --GREEN: #31D0AA;
+
 }
 /* general styles */
 ul {
@@ -148,10 +150,11 @@ a:focus {
 }
 
 .hero {
+  background: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)),
+  url(../images/people-office.jpg);
   padding: 188px 0;
+  /* background-repeat: round; */
   text-align: center;
-  margin-bottom: 120px;
-  background-color: var(--NAVY-BLUE);
 }
 .hero .button {
   color: var(--WHITE);
@@ -174,7 +177,10 @@ a:focus {
 /* end of  Hero section */
 
 /* advance section */
-/* no styling */
+.adv-icon {
+  background-color: var(--CLOUD);
+  padding-top: 120px;
+}
 /* end of advance section */
 
 /* What are we doing Section */
