@@ -192,7 +192,7 @@ a:focus {
 .adv-icon {
   width: 264px;
   height: 112px;
-  padding: 24px 100px;
+  padding: 24px 0;
   margin-bottom: 8px;
   background-color: var(--CLOUD);
   border-radius: 4px;
@@ -219,11 +219,72 @@ a:focus {
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
-
+.socmed-list {
+  gap: 24px;
+  padding-top: 8px;
+}
 .our-team-content {
   padding: 32px 0;
 }
+
+.our-team-socmed {
+  background-color: var(--IRIS);
+  padding: 12px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 /* end of Our team section */
+
+/* Customer Section */
+.cs-list {
+  border: 1px solid lightgrey;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+/* End of Customer Section */
+
+/* footer */
+.footer {
+  color: var(--CLOUD);
+  line-height: 1.5;
+  letter-spacing: 0.32px;
+  background-color: var(--NAVY-BLUE);
+  padding-top: 101.5px;
+}
+.footer-sect {
+  padding-left: 156px;
+}
+.footer-logo {
+  color: var(--CLOUD);
+  padding-top: 101.5px;
+}
+.footer-text {
+  color: var(--CLOUD);
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.32px;
+  margin-top: 17.5px;
+  padding-bottom: 100px;
+}
+.footer-socmed-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  column-gap: 16px;
+}
+.footer-socmed-icon {
+  background-color: var(--IRIS);
+  padding: 12px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* end of footer */
 
 /* portfolio.html */
 .portfolio-btn {
@@ -289,29 +350,3 @@ a:focus {
 /* end of Portfolio image section */
 
 /* end of portfolio.html */
-
-/* footer */
-.footer {
-  color: var(--CLOUD);
-  line-height: 1.5;
-  letter-spacing: 0.32px;
-  background-color: var(--NAVY-BLUE);
-  padding-top: 101.5px;
-}
-.footer-sect {
-  padding-left: 156px;
-}
-.footer-logo {
-  color: var(--CLOUD);
-  padding-top: 101.5px;
-}
-.footer-text {
-  color: var(--CLOUD);
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.32px;
-  margin-top: 17.5px;
-  padding-bottom: 100px;
-}
-
-/* end of footer */
