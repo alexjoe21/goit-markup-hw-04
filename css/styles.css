@@ -220,31 +220,70 @@ a:focus {
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 .socmed-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 24px;
-  padding-top: 8px;
+  padding: 8px 0px 32px 0px;
 }
-.our-team-content {
-  padding: 32px 0;
+
+.our-team-link {
+  border-radius: 50%;
+  background-color: var(--IRIS);
+  padding: 12px;
+  display: flex;
 }
 
 .our-team-socmed {
-  background-color: var(--IRIS);
-  padding: 12px;
-  border-radius: 50%;
   display: flex;
-  align-items: center;
   justify-content: center;
+  color: var(--CLOUD);
+  width: 16px;
+  height: 16px;
+}
+
+.our-team-link:hover,
+.our-team-link:focus {
+  background-color: var(--GREEN);
 }
 /* end of Our team section */
 
 /* Customer Section */
 .cs-list {
-  border: 1px solid lightgrey;
   display: flex;
   justify-content: center;
   gap: 24px;
 }
 
+.cs-item {
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.cs-link {
+  display: flex;
+  border-radius: 4px;
+  border: 1px solid var(--LIGHT-SLATE);
+  padding: 16px 32px;
+  justify-content: center;
+  align-items: center;
+  color: var(--LIGHT-SLATE);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.cs-icon {
+  width: 104px;
+  height: 56px;
+  display: flex;
+  fill: currentColor;
+}
+
+.cs-link:hover,
+.cs-link:focus {
+  border-color: var(--OCEAN);
+  color: var(--OCEAN);
+}
 /* End of Customer Section */
 
 /* footer */
@@ -253,10 +292,11 @@ a:focus {
   line-height: 1.5;
   letter-spacing: 0.32px;
   background-color: var(--NAVY-BLUE);
-  padding-top: 101.5px;
+  padding: 120px 0;
 }
 .footer-sect {
-  padding-left: 156px;
+  display: flex;
+  column-gap: 120px;
 }
 .footer-logo {
   color: var(--CLOUD);
@@ -270,19 +310,39 @@ a:focus {
   margin-top: 17.5px;
   padding-bottom: 100px;
 }
+
+.footer-socmed-title {
+  font-size: 16px;
+  margin-bottom: 16px;
+  color: #fff;
+  line-height: 1.5;
+  letter-spacing: 0.32px;
+}
+
 .footer-socmed-list {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   column-gap: 16px;
 }
-.footer-socmed-icon {
-  background-color: var(--IRIS);
-  padding: 12px;
-  border-radius: 50%;
+
+.footer-socmed-link {
   display: flex;
+  background-color: var(--IRIS);
+  border-radius: 50%;
+  padding: 8px;
   align-items: center;
-  justify-content: center;
+  fill: currentColor;
+}
+
+.footer-socmed-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.footer-socmed-link:hover,
+.footer-socmed-link:focus {
+  background-color: var(--GREEN);
 }
 /* end of footer */
 
