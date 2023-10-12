@@ -196,6 +196,12 @@ a:focus {
   margin-bottom: 8px;
   background-color: var(--CLOUD);
   border-radius: 4px;
+  
+}
+
+.adv-icon-list {
+  width: 64px;
+  height: 64px;
 }
 
 /* end of advance section */
