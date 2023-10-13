@@ -322,14 +322,18 @@ a:focus {
 .cs-icon {
   width: 104px;
   height: 56px;
-  display: flex;
   fill: currentColor;
+}
+
+.cs-link svg:hover {
+  fill: var(--IRIS);
 }
 
 .cs-link:hover, 
 .cs-link:focus {
   border-color: var(--IRIS);
   color: var(--IRIS);
+  /* fill: var(--IRIS); */
 }
 
 /* End of Customer Section */
