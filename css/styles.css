@@ -98,23 +98,58 @@ body {
   display: flex;
   justify-content: space-between;
 }
+.hdr-logo {
+  color: var(--NAVY-BLUE);
+}
+
 
 nav {
   display: flex;
   gap: 76px;
 }
+
 .hdr-list {
   gap: 40px;
 }
 
-.hdr a {
+.hdr-list-link {
   text-decoration: none;
-  color: var(--NAVY-BLUE);
+  font-size: 16px;
   font-weight: 500;
-  line-height: 24px;
+  line-height: 1.5;
   letter-spacing: 0.32px;
-  display: flex;
+  position: relative;
+  color: var(--NAVY-BLUE);
 }
+.hdr-active {
+  color: var(--OCEAN);
+}
+
+.hdr-list-link::after {
+  content: '';
+  height: 4px;
+  background: var(--OCEAN);
+  position: absolute;
+  left: 0;
+  bottom: -27px;
+  border-radius: 2px;
+}
+
+.hdr-list-link:hover::after {
+  width: 100%;
+}
+
+.hdr-active::after {
+  content: '';
+  height: 4px;
+  background-color: var(--OCEAN);
+  position: absolute;
+  left: 0;
+  bottom: -27px;
+  border-radius: 2px;
+  width: 100%;
+}
+
 
 .contact-list {
   gap: 40px;
@@ -126,6 +161,12 @@ nav {
   color: var(--SLATE);
   display: flex;
 }
+
+.hdr-list-link:hover,
+.hdr-list-link:focus {
+  color: var(--OCEAN)
+}
+
 .contact:hover,
 .contact:focus {
   color: var(--IRIS);
@@ -191,12 +232,12 @@ a:focus {
 
 .adv-icon {
   width: 264px;
-  height: 112px;
+  /* height: 112px; */
   padding: 24px 0;
   margin-bottom: 8px;
   background-color: var(--CLOUD);
   border-radius: 4px;
-  
+  height: 64px;
 }
 
 /* .adv-icon-list {
@@ -285,11 +326,12 @@ a:focus {
   fill: currentColor;
 }
 
-.cs-link:hover,
+.cs-link:hover, 
 .cs-link:focus {
-  border-color: var(--OCEAN);
-  color: var(--OCEAN);
+  border-color: var(--IRIS);
+  color: var(--IRIS);
 }
+
 /* End of Customer Section */
 
 /* footer */
