@@ -325,16 +325,12 @@ a:focus {
   fill: currentColor;
 }
 
-.cs-link svg:hover {
-  fill: var(--IRIS);
-}
-
 .cs-link:hover, 
 .cs-link:focus {
   border-color: var(--IRIS);
   color: var(--IRIS);
-  /* fill: var(--IRIS); */
 }
+
 
 /* End of Customer Section */
 
