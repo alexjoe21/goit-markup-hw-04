@@ -93,15 +93,21 @@ body {
 
 .hdr {
   padding: 24px 0;
-  border-bottom: 1px solid var(--CLOUD);
+  border-bottom: 1px solid var(--CORNFLOWER);
   background-color: var(--WHITE);
-  display: flex;
-  justify-content: space-between;
+  box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 2px 1px 0px rgba(46, 47, 66, 0.08);
 }
+
 .hdr-logo {
   color: var(--NAVY-BLUE);
 }
 
+.hdr-container {
+  display: flex;
+  justify-content: space-between;
+}
 
 nav {
   display: flex;
@@ -109,6 +115,7 @@ nav {
 }
 
 .hdr-list {
+  display: flex;
   gap: 40px;
 }
 
@@ -126,7 +133,7 @@ nav {
 }
 
 .hdr-list-link::after {
-  content: '';
+  content: "";
   height: 4px;
   background: var(--OCEAN);
   position: absolute;
@@ -140,7 +147,7 @@ nav {
 }
 
 .hdr-active::after {
-  content: '';
+  content: "";
   height: 4px;
   background-color: var(--OCEAN);
   position: absolute;
@@ -150,21 +157,17 @@ nav {
   width: 100%;
 }
 
-
 .contact-list {
   gap: 40px;
   display: inline-flex;
 }
-.hdr .contact {
-  font-weight: 400;
-  padding-top: 0%;
+.contact {
   color: var(--SLATE);
-  display: flex;
 }
 
 .hdr-list-link:hover,
 .hdr-list-link:focus {
-  color: var(--OCEAN)
+  color: var(--OCEAN);
 }
 
 .contact:hover,
@@ -325,12 +328,11 @@ a:focus {
   fill: currentColor;
 }
 
-.cs-link:hover, 
+.cs-link:hover,
 .cs-link:focus {
   border-color: var(--IRIS);
   color: var(--IRIS);
 }
-
 
 /* End of Customer Section */
 
@@ -453,6 +455,12 @@ a:focus {
 
 .img-content {
   padding: 32px 16px;
+}
+
+.img-list-item:hover,
+.img-list-itemfoceus {
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
+    0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
 }
 
 /* end of Portfolio image section */
